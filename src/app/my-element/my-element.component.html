@@ -1,4 +1,10 @@
-<div>
-  <button (click)="clicked()">I'm a custom element {{value}}</button>
-  <img src="https://dummyimage.com/200x100/000/fff.png&text={{tds.value}}" />
-</div>
+<mat-card [ngClass]="{ 'selected': selected$ | async }">
+  <p>I'm a custom element {{value}}</p>
+  <h1>{{tds.value}}</h1>
+  <p>
+    <button mat-button (click)="bump()">+</button>
+    <p>
+      <input type="number" matInput placeholder="Pick a number" value="22" #pickANumber>
+      <button mat-button (click)="save(pickANumber.value)">save</button>
+    </p>
+</mat-card>

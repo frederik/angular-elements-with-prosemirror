@@ -96,6 +96,12 @@
   dependencies:
     tslib "^1.9.0"
 
+"@angular/cdk@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-6.0.0.tgz#0e1736eca8900ce1c4e66699d09e91d4ce151f56"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/cli@~6.0.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-6.0.0.tgz#346b356775ddf8cdb8a9a5095b0663878eca3486"
@@ -140,6 +146,12 @@
   dependencies:
     tslib "^1.9.0"
 
+"@angular/elements@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@angular/elements/-/elements-6.0.0.tgz#271392b64f097cdf3b3d86b7204f5df4c8814d2d"
+  dependencies:
+    tslib "^1.9.0"
+
 "@angular/forms@^6.0.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-6.0.0.tgz#436e2df39dc57db124da5a5c02bc63909fdf7046"
@@ -155,6 +167,12 @@
 "@angular/language-service@^6.0.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-6.0.0.tgz#85bf577fd7f45eff13128d4f5f0125078d610aec"
+
+"@angular/material@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@angular/material/-/material-6.0.0.tgz#9704ced8ba2eca59b04c6c6ed032a1f36f685667"
+  dependencies:
+    tslib "^1.7.1"
 
 "@angular/platform-browser-dynamic@^6.0.0":
   version "6.0.0"
@@ -1624,6 +1642,12 @@ dns-txt@^2.0.2:
   resolved "https://registry.yarnpkg.com/dns-txt/-/dns-txt-2.0.2.tgz#b91d806f5d27188e4ab3e7d107d881a1cc4642b6"
   dependencies:
     buffer-indexof "^1.0.0"
+
+document-register-element@^1.7.2:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/document-register-element/-/document-register-element-1.8.1.tgz#db841ece6cba28e6e538ac8e815413b59e86047e"
+  dependencies:
+    lightercollective "^0.0.0"
 
 dom-converter@~0.1:
   version "0.1.4"
@@ -3419,6 +3443,10 @@ lie@~3.1.0:
   resolved "https://registry.yarnpkg.com/lie/-/lie-3.1.1.tgz#9a436b2cc7746ca59de7a41fa469b3efb76bd87e"
   dependencies:
     immediate "~3.0.5"
+
+lightercollective@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/lightercollective/-/lightercollective-0.0.0.tgz#5b85f6755b78c1f94db590e479f954cbfeeb0409"
 
 load-json-file@^1.0.0:
   version "1.1.0"
@@ -5857,7 +5885,7 @@ tsickle@^0.27.2:
     source-map "^0.6.0"
     source-map-support "^0.5.0"
 
-tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.7.1, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.0.tgz#e37a86fda8cbbaf23a057f473c9f4dc64e5fc2e8"
 

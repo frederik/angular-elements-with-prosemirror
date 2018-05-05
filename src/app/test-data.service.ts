@@ -10,4 +10,8 @@ export class TestDataService {
   public bump() {
     this.value++;
   }
+
+  public reset(value) {
+    this.value = value;
+  }
 }

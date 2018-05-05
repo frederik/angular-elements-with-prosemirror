@@ -5,6 +5,9 @@ import { createCustomElement } from '@angular/elements';
 import { ProsemirrorModule } from './prosemirror/prosemirror.module';
 import { AppComponent } from './app.component';
 import { MyElementComponent } from './my-element/my-element.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatButtonModule, MatCardModule, MatInputModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,11 @@ import { MyElementComponent } from './my-element/my-element.component';
   ],
   imports: [
     BrowserModule,
-    ProsemirrorModule
+    ProsemirrorModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -21,9 +28,8 @@ import { MyElementComponent } from './my-element/my-element.component';
 })
 export class AppModule {
   constructor(private injector: Injector) {
-    const AppElement = createCustomElement(MyElementComponent, { injector: this.injector });
-    console.log(AppElement);
-    customElements.define('my-element', AppElement);
+    const MyElement = createCustomElement(MyElementComponent, { injector: this.injector });
+    customElements.define('my-element', MyElement);
   }
   ngDoBootstrap() {
 

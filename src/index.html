@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   <meta charset="utf-8">
   <title>ProsemirrorElements</title>
   <base href="/">
@@ -11,8 +13,12 @@
 </head>
 
 <body>
-  <my-element value="outside the app"></my-element>
+  <my-element value="outside the app" id="my-custom-element"></my-element>
   <app-root></app-root>
+  <script>
+    var myCustomElement = document.getElementById('my-custom-element');
+    myCustomElement.addEventListener('result', function (value) { alert('did not implement saving outside the app ' + value.detail); })
+  </script>
 </body>
 
 </html>

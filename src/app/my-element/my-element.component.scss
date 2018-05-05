@@ -1,0 +1,13 @@
+mat-card {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    border: 1px solid #fff;
+}
+
+.selected {
+    border: 1px solid orange;
+}
