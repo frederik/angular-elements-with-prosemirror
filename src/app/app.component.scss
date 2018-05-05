@@ -1,0 +1,10 @@
+.app::before {
+    position: absolute;
+    transform: translateX(-2rem);
+    content: "app";
+}
+
+.app {
+    margin: 2rem;
+    background: #eee;
+}

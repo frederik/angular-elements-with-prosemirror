@@ -14,7 +14,7 @@ const nodes = addListNodes(schema.spec.nodes, "paragraph block*", "block");
 const mySchema = new Schema({
   nodes: nodes.append({
     example: {
-      attrs: {},
+      attrs: { value: { default: 'in the app and in ProseMirror' } },
       inline: false,
       draggable: true,
       selectable: true,
@@ -23,7 +23,7 @@ const mySchema = new Schema({
       // If you are not using a nodeview, make sure your editor instance supplies a citationRenderer,
       // otherwise all citations RENDERERwill be rendered as NO RENDERER SUPPLIED.
       toDOM(node) {
-        return ['my-element', {}, ''];
+        return ['my-element', { value: node.attrs.value }, ''];
       },
       parseDOM: [{
         tag: 'my-element',

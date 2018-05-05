@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { TestDataService } from '../test-data.service';
 
 @Component({
   selector: 'app-my-element',
@@ -7,13 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyElementComponent implements OnInit {
 
-  constructor() { }
+  @Input() value = '';
+
+  constructor(private tds: TestDataService) { }
 
   ngOnInit() {
   }
 
   clicked() {
-    alert('Clicked');
+    this.tds.bump();
+    this.value = this.value + '.';
   }
 
 }

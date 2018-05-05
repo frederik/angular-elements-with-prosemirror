@@ -3,9 +3,8 @@
 @import '../node_modules/prosemirror-example-setup/style/style.css';
 
 .ProseMirror {
-    border: 2px solid orange;
-}
-
-body {
-    background: #eee;
+    border: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
