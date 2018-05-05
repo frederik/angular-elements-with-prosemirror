@@ -1,0 +1,11 @@
+@import '../node_modules/prosemirror-view/style/prosemirror.css';
+@import '../node_modules/prosemirror-menu/style/menu.css';
+@import '../node_modules/prosemirror-example-setup/style/style.css';
+
+.ProseMirror {
+    border: 2px solid orange;
+}
+
+body {
+    background: #eee;
+}
